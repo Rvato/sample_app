@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+
+}
+.main {
+  width: 100%;
+  .top-banner {
+    height: 600px;
+    background-image: image-url("Mt.Fuji.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+  }
+}
+.footer {
+
+}
