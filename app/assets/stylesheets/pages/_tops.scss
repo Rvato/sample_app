@@ -4,7 +4,30 @@
 
 .header {
   background-color: white;
-
+  .logos {
+    height: auto;
+    width: 240px;
+    text-align: center;
+    font-weight: 600;
+    padding: 12px;
+    .logo-1 {
+      font-family: Georgia;
+      font-size: 12px;
+      color: red;
+    }
+    .logo-2 {
+      font-family: Georgia;
+      font-size: 24px;
+      color: navy;
+    }
+    .logo-3 {
+      background-color: navy;
+      font-family: Georgia;
+      font-size: 12px;
+      color: white;
+      border-top: 2px red solid;
+    }
+  }
 }
 .main {
   width: 100%;
