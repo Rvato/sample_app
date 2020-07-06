@@ -1,14 +1,19 @@
-.header
-  .logos
-    .logo-1
-      Challenge the record
-    .logo-2
-      SILVER SPORTS
-    .logo-3
-      シルバースポーツ
-.main
-  .top-banner
+.form-wrapper
+  = form_with local: true, class: "form-wrapper" do |form|
 
-  
-.footer
-  
+    .header
+      .logos
+        .logo-1
+          Challenge the record
+        .logo-2
+          SILVER SPORTS
+        .logo-3
+          シルバースポーツ
+      .search-form
+        = text_field_tag "text", "", class: "textarea", placeholder: "何かお探しですか？", maxlength: "24", type: "text"
+    .main
+      .top-banner
+
+      
+    .footer
+      
