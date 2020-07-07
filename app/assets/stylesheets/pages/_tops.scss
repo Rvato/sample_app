@@ -4,12 +4,14 @@
 
 .header {
   background-color: white;
+  display: flex;
+  padding: 12px;
   .logos {
     height: auto;
     width: 240px;
     text-align: center;
     font-weight: 600;
-    padding: 12px;
+    margin: auto;
     .logo-1 {
       font-family: Georgia;
       font-size: 12px;
@@ -28,6 +30,22 @@
       border-top: 2px red solid;
     }
   }
+  .search-form {
+    margin: auto;
+    .textarea {
+      height: 36px;
+      width: 600px;
+      border: 1px gray solid;
+      border-radius: 4px;
+      font-size: 12px;
+      padding: 12px;
+    }
+    .textarea:focus {
+      border: 1px navy solid;
+      outline: 0;
+
+    }
+  }
 }
 .main {
   width: 100%;
@@ -36,8 +54,6 @@
     background-image: image-url("Mt.Fuji.jpeg");
     background-size: cover;
     background-position: center;
-    margin:0;
-    padding:0;
   }
 }
 .footer {
