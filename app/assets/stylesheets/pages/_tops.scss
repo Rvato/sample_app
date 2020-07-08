@@ -47,6 +47,7 @@
     }
   }
 }
+
 .main {
   width: 100%;
   .top-banner {
@@ -54,8 +55,22 @@
     background-image: image-url("Mt.Fuji.jpeg");
     background-size: cover;
     background-position: center;
+    padding: 60px;
+    &__head {
+      font-size: 60px;
+      color: rgb(240, 240, 240);
+      text-shadow: 0 0 12px black;
+      line-height: 2;
+    }
+    &__subhead {
+      font-size: 24px;
+      color: rgb(240, 240, 240);
+      text-shadow: 0 0 12px black;
+      line-height: 1.2;
+    }
   }
 }
+
 .footer {
 
 }
