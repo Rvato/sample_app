@@ -20,10 +20,10 @@
     .logo-2 {
       font-family: Georgia;
       font-size: 24px;
-      color: navy;
+      color: $main-color;
     }
     .logo-3 {
-      background-color: navy;
+      background-color: $main-color;
       font-family: Georgia;
       font-size: 12px;
       color: white;
@@ -41,7 +41,7 @@
       padding: 12px;
     }
     .textarea:focus {
-      border: 1px navy solid;
+      border: 1px $main-color solid;
       outline: 0;
 
     }
@@ -74,14 +74,31 @@
 }
 
 .footer {
-
+  height: auto;
+  width: 100%;
+  background-color: $main-color;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 24px;
+  padding: 24px;
+  bottom: 0;
+  .texts {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    line-height: 2;
+  }
+  .headquarters {
+    color: rgb(120, 120, 120);
+    line-height: 4;
+  }
 }
 
 @keyframes fadeIn {
   from {
-      opacity:0;
+    opacity:0;
   }
   to {
-      opacity:1;
+    opacity:1;
   }
 }
