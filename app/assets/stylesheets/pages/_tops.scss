@@ -32,7 +32,7 @@
   }
   .search-form {
     margin: auto;
-    .textarea {
+    &__input {
       height: 36px;
       width: 600px;
       border: 1px gray solid;
@@ -40,10 +40,20 @@
       font-size: 12px;
       padding: 12px;
     }
-    .textarea:focus {
+    &__input:focus {
       border: 1px $main-color solid;
       outline: 0;
-
+    }
+    &__btn {
+      cursor: pointer;
+      height: 36px;
+      width: 36px;
+      background-color: $main-color;
+      border: 1px $main-color solid;
+      border-radius: 4px;
+    }
+    &__icon {
+      color: white;
     }
   }
 }
