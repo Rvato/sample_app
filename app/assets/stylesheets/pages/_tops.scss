@@ -5,7 +5,7 @@
 .header {
   background-color: white;
   display: flex;
-  padding: 24px;
+  padding: 12px;
   .logos {
     height: auto;
     width: 240px;
@@ -79,6 +79,11 @@
       text-shadow: 0 0 12px black;
       line-height: 1.2;
       animation: fadeIn 12s;
+    }
+  }
+  .navbar {
+    ul {
+      display: flex;
     }
   }
 }
