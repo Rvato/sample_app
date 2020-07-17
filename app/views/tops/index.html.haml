@@ -23,10 +23,24 @@
           ショップサイトです。
       .navbar
         %ul
-          %li 会社概要
-          %li 店舗案内
-          %li 商品一覧
-          %li ご利用ガイド
+          %li
+            = icon 'fas', 'envelope', class: "navbar__icon"
+            ニュース
+          %li
+            = icon 'fas', 'building', class: "navbar__icon"
+            会社概要
+          %li
+            = icon 'fas', 'store-alt', class: "navbar__icon"
+            店舗案内
+          %li
+            = icon 'fas', 'bicycle', class: "navbar__icon"
+            商品一覧
+          %li
+            = icon 'fas', 'eye', class: "navbar__icon"
+            ご利用ガイド
+          %li
+            = icon 'fas', 'people-arrows', class: "navbar__icon"
+            採用情報
 
     .footer
       %ul
