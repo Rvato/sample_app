@@ -25,28 +25,32 @@
         %ul
           %li
             = icon 'fas', 'envelope', class: "navbar__icon"
-            ニュース
+            = link_to "ニュース", "#"
           %li
             = icon 'fas', 'building', class: "navbar__icon"
-            会社概要
+            = link_to "会社概要", "#"
           %li
             = icon 'fas', 'store-alt', class: "navbar__icon"
-            店舗案内
+            = link_to "店舗案内", "#"
           %li
             = icon 'fas', 'bicycle', class: "navbar__icon"
-            商品一覧
+            = link_to "商品一覧", "#"
           %li
             = icon 'fas', 'eye', class: "navbar__icon"
-            ご利用ガイド
+            = link_to "ご利用ガイド", "#"
           %li
             = icon 'fas', 'people-arrows', class: "navbar__icon"
-            採用情報
+            = link_to "採用情報", "#"
 
     .footer
       %ul
-        %li プライバシーポリシー
-        %li シルバースポーツ利用規約
-        %li 特定商取引に関する表記
-        %li お問い合わせ
+        %li 
+          = link_to "プライバシーポリシー", "#"
+        %li 
+          = link_to "シルバースポーツ利用規約", "#"
+        %li 
+          = link_to "特定商取引に関する表記", "#"
+        %li 
+          = link_to "お問い合わせ", "#"
       .headquarters
         ©️2005 SilverSports inc

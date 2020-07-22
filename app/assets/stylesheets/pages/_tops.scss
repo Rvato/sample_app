@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-// hennkounasi
 .header {
   background-color: white;
   display: flex;
@@ -96,8 +95,11 @@
       margin-top: 12px;
       li {
         font-weight: 600;
-        color: $main-color;
         padding: 0 24px;
+        a {
+          text-decoration: none;
+          color: $main-color;
+        }
       }
     }
     &__icon {
@@ -124,6 +126,10 @@
     line-height: 2;
     li {
       padding: 24px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
   .headquarters {
