@@ -2,12 +2,12 @@
   = form_with local: true, class: "form-wrapper" do |form|
 
     .header
-      .logos
-        .logo-1
+      .header__logos
+        .header__logos__logo-1
           Challenge the record
-        .logo-2
+        .header__logos__logo-2
           SILVER SPORTS
-        .logo-3
+        .header__logos__logo-3
           シルバースポーツ
       .search-form
         = text_field_tag :keyword, "", class: "search-form__input", placeholder: "何かお探しですか？", maxlength: "36", type: "text"
@@ -43,14 +43,22 @@
             = link_to "採用情報", "#"
 
     .footer
-      %ul
-        %li 
-          = link_to "プライバシーポリシー", "#"
-        %li 
-          = link_to "シルバースポーツ利用規約", "#"
-        %li 
-          = link_to "特定商取引に関する表記", "#"
-        %li 
-          = link_to "お問い合わせ", "#"
-      .headquarters
-        ©️2005 SilverSports inc
+      .footer__logos
+        .footer__logos__logo-1
+          Challenge the record
+        .footer__logos__logo-2
+          SILVER SPORTS
+        .footer__logos__logo-3
+          シルバースポーツ
+      .footer__container
+        %ul
+          %li 
+            = link_to "プライバシーポリシー", "#"
+          %li 
+            = link_to "シルバースポーツ利用規約", "#"
+          %li 
+            = link_to "特定商取引に関する表記", "#"
+          %li 
+            = link_to "お問い合わせ", "#"
+        .headquarters
+          ©️2005 SilverSports inc
