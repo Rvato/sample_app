@@ -2,12 +2,12 @@
   = form_with local: true, class: "form-wrapper" do |form|
 
     .header
-      .logos
-        .logo-1
+      .header__logos
+        .header__logos__logo-1
           Challenge the record
-        .logo-2
+        .header__logos__logo-2
           SILVER SPORTS
-        .logo-3
+        .header__logos__logo-3
           シルバースポーツ
       .search-form
         = text_field_tag :keyword, "", class: "search-form__input", placeholder: "何かお探しですか？", maxlength: "36", type: "text"
@@ -25,28 +25,40 @@
         %ul
           %li
             = icon 'fas', 'envelope', class: "navbar__icon"
-            ニュース
+            = link_to "ニュース", "#"
           %li
             = icon 'fas', 'building', class: "navbar__icon"
-            会社概要
+            = link_to "会社概要", "#"
           %li
             = icon 'fas', 'store-alt', class: "navbar__icon"
-            店舗案内
+            = link_to "店舗案内", "#"
           %li
             = icon 'fas', 'bicycle', class: "navbar__icon"
-            商品一覧
+            = link_to "商品一覧", "#"
           %li
             = icon 'fas', 'eye', class: "navbar__icon"
-            ご利用ガイド
+            = link_to "ご利用ガイド", "#"
           %li
             = icon 'fas', 'people-arrows', class: "navbar__icon"
-            採用情報
+            = link_to "採用情報", "#"
 
     .footer
-      %ul
-        %li プライバシーポリシー
-        %li シルバースポーツ利用規約
-        %li 特定商取引に関する表記
-        %li お問い合わせ
-      .headquarters
-        ©️2005 SilverSports inc
+      .footer__logos
+        .footer__logos__logo-1
+          Challenge the record
+        .footer__logos__logo-2
+          SILVER SPORTS
+        .footer__logos__logo-3
+          シルバースポーツ
+      .footer__container
+        %ul
+          %li 
+            = link_to "プライバシーポリシー", "#"
+          %li 
+            = link_to "シルバースポーツ利用規約", "#"
+          %li 
+            = link_to "特定商取引に関する表記", "#"
+          %li 
+            = link_to "お問い合わせ", "#"
+        .headquarters
+          ©️2005 SilverSports inc

@@ -2,28 +2,27 @@
   box-sizing: border-box;
 }
 
-// hennkounasi
 .header {
   background-color: white;
   display: flex;
   padding: 12px;
-  .logos {
+  &__logos {
     height: auto;
     width: 240px;
     text-align: center;
     font-weight: 600;
     margin: auto;
-    .logo-1 {
+    &__logo-1 {
       font-family: Georgia;
       font-size: 12px;
       color: red;
     }
-    .logo-2 {
+    &__logo-2 {
       font-family: Georgia;
       font-size: 24px;
       color: $main-color;
     }
-    .logo-3 {
+    &__logo-3 {
       background-color: $main-color;
       font-family: Georgia;
       font-size: 12px;
@@ -96,8 +95,11 @@
       margin-top: 12px;
       li {
         font-weight: 600;
-        color: $main-color;
         padding: 0 24px;
+        a {
+          text-decoration: none;
+          color: $main-color;
+        }
       }
     }
     &__icon {
@@ -109,26 +111,57 @@
 }
 
 .footer {
-  height: auto;
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
   background-color: $main-color;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 24px;
-  padding: 24px;
-  bottom: 0;
-  ul {
-    display: flex;
-    justify-content: center;
-    color: white;
-    line-height: 2;
-    li {
-      padding: 24px;
+  &__logos {
+    height: auto;
+    width: 240px;
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+    &__logo-1 {
+      font-family: Georgia;
+      font-size: 12px;
+      color: rgb(180, 180, 180);
+    }
+    &__logo-2 {
+      font-family: Georgia;
+      font-size: 24px;
+      color: rgb(180, 180, 180);
+    }
+    &__logo-3 {
+      background-color: rgb(180, 180, 180);
+      font-family: Georgia;
+      font-size: 12px;
+      color: white;
+      border-top: 2px rgb(180, 180, 180) solid;
     }
   }
-  .headquarters {
-    color: rgb(180, 180, 180);
-    line-height: 4;
+  &__container {
+    height: auto;
+    width: calc(100% - 360px);
+    font-size: 12px;
+    text-align: center;
+    padding: 24px;
+    bottom: 0;
+    ul {
+      display: flex;
+      justify-content: center;
+      color: white;
+      line-height: 2;
+      li {
+        padding: 24px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    .headquarters {
+      color: rgb(180, 180, 180);
+      line-height: 4;
+    }
   }
 }
 
