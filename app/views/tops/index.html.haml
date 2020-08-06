@@ -1,64 +1,63 @@
-.form-wrapper
-  = form_with local: true, class: "form-wrapper" do |form|
+= form_with local: true, class: "search-former" do |form|
 
-    .header
-      .header__logos
-        .header__logos__logo-1
-          Challenge the record
-        .header__logos__logo-2
-          SILVER SPORTS
-        .header__logos__logo-3
-          シルバースポーツ
-      .search-form
-        = text_field_tag :keyword, "", class: "search-form__input", placeholder: "何かお探しですか？", maxlength: "36", type: "text"
-        = button_tag type: "submit", class: "search-form__btn" do
-          = icon 'fas', 'search', class: "search-form__icon"
-    .main
-      .top-banner
-        .top-banner__head
-          人生が変わるスポーツショップ
-        .top-banner__subhead
-          シルバースポーツはだれでもかんたんに購入できる
-          %br
-          ショップサイトです。
-      .navbar
-        %ul
-          %li
-            = icon 'fas', 'envelope', class: "navbar__icon"
-            = link_to "ニュース", "#"
-          %li
-            = icon 'fas', 'building', class: "navbar__icon"
-            = link_to "会社概要", "#"
-          %li
-            = icon 'fas', 'store-alt', class: "navbar__icon"
-            = link_to "店舗案内", "#"
-          %li
-            = icon 'fas', 'bicycle', class: "navbar__icon"
-            = link_to "商品一覧", "#"
-          %li
-            = icon 'fas', 'eye', class: "navbar__icon"
-            = link_to "ご利用ガイド", "#"
-          %li
-            = icon 'fas', 'people-arrows', class: "navbar__icon"
-            = link_to "採用情報", "#"
+  .header
+    .header__logos
+      = icon 'fas', 'wave-square', class: "logo__icon"
+      .header__logos__logo-1
+        SILVER SPORTS
+      .header__logos__logo-2
+        Challenge the record
 
-    .footer
-      .footer__logos
-        .footer__logos__logo-1
-          Challenge the record
-        .footer__logos__logo-2
-          SILVER SPORTS
-        .footer__logos__logo-3
-          シルバースポーツ
-      .footer__container
-        %ul
-          %li 
-            = link_to "プライバシーポリシー", "#"
-          %li 
-            = link_to "シルバースポーツ利用規約", "#"
-          %li 
-            = link_to "特定商取引に関する表記", "#"
-          %li 
-            = link_to "お問い合わせ", "#"
-        .headquarters
-          ©️2005 SilverSports inc
+    .search-form
+      = text_field_tag :keyword, "", class: "search-form__input", placeholder: "何かお探しですか？", maxlength: "36", type: "text"
+      = button_tag type: "submit", class: "search-form__btn" do
+        = icon 'fas', 'search', class: "search-form__icon"
+  .main
+    .top-banner
+      .top-banner__head
+        人生が変わるスポーツショップ
+      .top-banner__subhead
+        シルバースポーツはだれでもかんたんに購入できる
+        %br
+        ショップサイトです。
+    .navbar
+      %ul
+        %li
+          = icon 'fas', 'envelope', class: "navbar__icon"
+          = link_to "ニュース", "#"
+        %li
+          = icon 'fas', 'building', class: "navbar__icon"
+          = link_to "会社概要", "#"
+        %li
+          = icon 'fas', 'store-alt', class: "navbar__icon"
+          = link_to "店舗案内", "#"
+        %li
+          = icon 'fas', 'bicycle', class: "navbar__icon"
+          = link_to "商品一覧", "#"
+        %li
+          = icon 'fas', 'eye', class: "navbar__icon"
+          = link_to "ご利用ガイド", "#"
+        %li
+          = icon 'fas', 'people-arrows', class: "navbar__icon"
+          = link_to "採用情報", "#"
+
+  .footer
+    .footer__logos
+      .footer__logos__logo-1
+        Challenge the record
+      .footer__logos__logo-2
+        SILVER SPORTS
+      .footer__logos__logo-3
+        シルバースポーツ
+    .footer__container
+      %ul
+        %li 
+          = link_to "プライバシーポリシー", "#"
+        %li 
+          = link_to "シルバースポーツ利用規約", "#"
+        %li 
+          = link_to "特定商取引に関する表記", "#"
+        %li 
+          = link_to "お問い合わせ", "#"
+      .headquarters
+        ©️2005 SilverSports inc
