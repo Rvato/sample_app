@@ -3,6 +3,7 @@
 }
 
 .header {
+  height: 72px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
@@ -11,28 +12,22 @@
   position: fixed;
   top: 0;
   &__logos {
-    display: block;
+    display: flex;
+    text-decoration: none;
     height: auto;
     width: 240px;
     text-align: center;
-    font-weight: 600;
     margin: auto;
     &__logo-1 {
       font-family: Georgia;
-      font-size: 12px;
-      color: red;
+      font-size: 24px;
+      font-weight: 600;
+      color: $main-color;
     }
     &__logo-2 {
       font-family: Georgia;
-      font-size: 24px;
-      color: $main-color;
-    }
-    &__logo-3 {
-      background-color: $main-color;
-      font-family: Georgia;
       font-size: 12px;
-      color: white;
-      border-top: 2px red solid;
+      color: gray;
     }
   }
   .search-form {
@@ -66,7 +61,7 @@
 
 .main {
   width: 100%;
-  margin-top: 73.2px;
+  margin-top: 72px;
   .top-banner {
     height: 600px;
     background-image: image-url("Mt.Fuji.jpeg");
