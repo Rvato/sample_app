@@ -2,11 +2,13 @@
 
   .header
     .header__logos
-      = icon 'fas', 'wave-square', class: "logo__icon"
-      .header__logos__logo-1
-        SILVER SPORTS
-      .header__logos__logo-2
-        Challenge the record
+      = icon 'fas', 'wave-square fa-3x', class: "logo-icon"
+      .header__logos__text
+        .header__logos__text__logo-1
+          SILVER SPORTS
+        .header__logos__text__logo-2
+          Challenge the record
+      = link_to root_path
 
     .search-form
       = text_field_tag :keyword, "", class: "search-form__input", placeholder: "何かお探しですか？", maxlength: "36", type: "text"
@@ -43,12 +45,13 @@
 
   .footer
     .footer__logos
-      .footer__logos__logo-1
-        Challenge the record
-      .footer__logos__logo-2
-        SILVER SPORTS
-      .footer__logos__logo-3
-        シルバースポーツ
+      = icon 'fas', 'wave-square fa-3x', class: "logo-icon"
+      .footer__logos__text
+        .footer__logos__text__logo-1
+          SILVER SPORTS
+        .footer__logos__text__logo-2
+          Challenge the record
+      = link_to root_path
     .footer__container
       %ul
         %li 
